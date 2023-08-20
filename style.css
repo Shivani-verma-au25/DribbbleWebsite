@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* left nav */
+
+#left-nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#left-nav img{
+    height: 50px;
+    margin-left: 20px;
+}
+#left-nav h5{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.48);
+}
+#left-nav h5:hover{
+    color: black;
+}
+/* right nav */
+#right-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+   
+}
+#right-nav button{
+    font-size: 18px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: none;
+    color: rgba(0, 0, 0, 0.48);
+    font-weight: 500;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* #F082AC */
+#right-nav #btn{
+    background-color: #e13778;
+    color: white;
+    font-weight: 500;
+}
+
+#right-nav #btn:hover{
+    background-color: #F082AC;
+    cursor: pointer;
+}
+
+/* center */
+
+#center{
+    width: 100%;
+    height: 70%;
+    /* background-color: aqua; */
+    position: relative;
+    
+}
+#center video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.633);
+    position: absolute;
+    top: 0%;  
+    
+  
+}
+#overlay #over-nav{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#over-nav h5{
+    font-size: 15px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;  
+    transition: all ease .3s;
+}
+#over-nav #white-btn{
+    background-color: white;
+    color: black;
+}
+
+#over-nav h5:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Explore */
+
+#explore{
+    width: 100%;
+    height: 40%;
+    /* background-color: green; */
+    text-align: center;
+}
+#explore h1{
+   margin-top: 30px;
+   color: white;
+   margin-bottom: 25px;
+}
+#explore p{
+    color: white;
+    margin-top: 10px;   
+}
+#search{
+    width: 40%;
+    height: 50px;
+    /* background-color: gold; */
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+   
+}
+#search input{
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+   padding-left: 60px;
+   font-size: 16px;
+}
+
+#search i{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.371);
+}
+/* trading */
+
+#trading{
+    width: 100%;
+    height: 20%;
+    /* background-color: plum; */
+    position: absolute;
+    bottom:0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#trading h6{
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+#trading h5{
+    border: 1px solid rgba(255, 255, 255, 0.47);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 400;
+}
+#trading h5:hover{
+    border: 1px solid white;
+}
+h5:hover{
+    cursor: pointer;
+}
+
+
+/* Features */
+
+#features{
+    width: 100%;
+    /* height: 100%; */
+    /* background-color: aqua; */
+    margin-top: 80px;
+    position: relative;
+    padding: 0 20px;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    background-color: #F082AC;
+    display: inline-block;
+    margin-top: 40px;
+    margin-left: 65px;
+    position: relative;
+    transition: all ease .3s;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 10px;  
+   
+}
+
+#cover{
+    width: 100%;
+    height: 30%;
+    background-color: royalblue;
+    position: absolute; 
+    bottom: -30%; 
+    background: linear-gradient(transparent, black);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all ease .7s;
+    margin: 0 2px; 
+    border-radius: 10px;
+}
+
+
+#cover h5{
+
+    font-size: 16px;
+    color: white;
+    transition: all ease 0.5s;
+}
+#cover h6 i{
+    color: grey;
+    background-color: white;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 0 2px;
+    font-size: 16px;
+}
+
+.box:hover #cover{
+    bottom: 0%;
+}
+
+/* sign-in */
+
+#sign-in{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sign-in button{
+    display: inline-block;
+    width: 15%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: white;
+    background-color: #e13778;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+#sign-in #btn2:hover{
+    background-color: #F082AC;
+}
+#sign-in #btn3{
+    background-color: transparent;
+    color:#e13778;
+}
+
+/* footer */
+
+#footer{
+    width: 100%;
+    height: 80%;
+    background-color: #FAFAFB;
+    /* background-color: greenyellow; */
+    position: relative;
+    display: flex;
+
+}
+/* left-footer */
+#left{
+    margin-left: 60px;
+}
+
+#footer #left img{
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 80px;
+    cursor: pointer;
+}
+#left p{
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #686666;
+    
+}
+#left i{
+    margin-left: 50px;
+    font-size: 25px;
+}
+/* right -footer */
+.wrapper{
+    margin-left: 70px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+    /* margin-bottom: 100px; */
+    
+}
+.links h2{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.links li{
+    margin: 20px 0;
+    width: 150px;
+    list-style: none;
+    color: #686666;
+    cursor: pointer;
+}
+
+/* sub-footer */
+#sub-footer{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid rgb(239, 239, 239); 
+    padding: 0 20px; 
+   
+}
+#sub-footer .para1, .para2{
+    color: rgb(139, 139, 139);
+}
+#sub-footer span{
+    font-weight: 600;
+    color: black;
+}
+#sub-footer i{
+    font-size: 25px;
+    color: #e13778;
+}
